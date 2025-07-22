@@ -1,0 +1,218 @@
+/* Element selector */
+body{
+    background-color: cadetblue;
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+}
+/* Class selector */
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* ID selector */
+#card1 {
+    border-top: 4px solid #ff6b6b;
+    
+}
+/* ID selector */
+#card2 {
+    border-top: 4px solid #e4ff6b;
+    
+}
+/* ID selector */
+#card3 {
+    border-top: 4px solid blue;
+    
+}
+/* Descendant selector */
+.card .image {
+    width: 160px;
+    height: 160px;
+    border-radius: 0%;
+    overflow: hidden;
+    margin: 0 auto 15px;
+}
+/* Attribute selector */
+a[href^="mailto"] {
+    color: green; /* Makes email links blue */
+}
+/* Pseudo-class */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.medias a:hover {
+    color:black;
+}
+medias {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    gap: 15px;
+}
+/* Pseudo-element */
+.card::before {
+    content: "Senior";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #4a90e2;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.pricing-table{
+    display: flex;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: center;
+}
+/* Plan Styles */
+.plan {
+    background: aqua;
+    border-radius: 10px;
+    padding: 30px;
+    width: 300px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+/* Box Model Differences */
+#pkg-1{
+    box-sizing: content-box;
+    width: 220px;
+    border: 3px solid green;
+    padding: 30px; /* Will be added to width */
+}
+#pkg-2{
+    box-sizing:border-box;
+    width: 220px;
+    border: 3px solid green;
+    padding: 30px; /* Included in width */
+}
+#pkg-3{
+    box-sizing:border-box;
+    width: 220px;
+    border: 3px solid green;
+    padding: 30px; /* Included in width */
+}
+.package{
+    border-radius: 10%;
+}
+#pkg-2::before {
+    content: "Most Popular";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #4a90e2;
+    color: black;
+    padding: 5px 15px;
+    border-radius: 70px;
+    font-size: 12px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.package:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+
+}
+.btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: #3a7bc8;
+    transform: translateY(-2px);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    
+}
+nav {
+    position: sticky;
+    top: 0;
+    background-color:lightslategrey;
+    padding: 15px 0;
+    
+    
+}
+.nav-links {
+    display: flex;
+    justify-content:baseline;
+    list-style: none;
+    gap: 30px;
+    
+}
+.nav-links li a {
+    display: inline-block; /* Testing inline-block */
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #4a90e2;
+}
+.hero-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.8;
+}
+.btn {
+    width: 10%;
+    padding: 12px 30px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #3a7bc8;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.hero-bg {
+        position: absolute;
+        width: 40%;
+        height: 300px;
+        display: flex;
+        justify-content: flex-end; /* Aligns horizontally to right */
+        align-items: flex-end; /* Aligns vertically to bottom */
+        height: 300px;
+        border: 1px solid #ccc;
+        max-width: none;
+        padding-top: 55%;
+        z-index: -1;
+    }
